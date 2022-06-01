@@ -1,0 +1,195 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+/* navigation bar started */
+
+.logo img{
+    width: 190px;
+    height: 130px;
+}
+
+.navigation{
+    
+    background-color: rgb(8, 63, 110);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navigation>ul{
+    display: flex;
+    margin-right: 5px;
+   
+    padding: 10px 10px;
+
+}
+
+
+.navigation>ul>li{ 
+    list-style: none;
+    margin: 0px px;
+    margin-left: -8px;
+}
+
+.navigation>ul>li>a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 15px;
+    border-right: px solid palegreen;
+    padding: 15px 20px;
+    transition: 0.8s;
+
+}
+
+.navigation>ul>li:first-child>a{
+    border-left: px solid palegreen;
+}
+
+.navigation>ul>li:hover>a{
+    background-color: rgb(8, 63, 110);
+    color: rgb(236, 157, 11);
+}
+
+h2{
+    color: rgb(8, 238, 27);
+    margin-left: 30px;
+   
+}
+
+/* dropdown code start */
+
+.dropdown{
+
+    background-color: rgb(8, 63, 110);
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+    width: 100px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.8s;
+    visibility:hidden;
+    transform: scaleY(0);
+    transform-origin: top;
+    box-shadow: 5px 5px 5px rgb(222, 243, 190);
+}
+
+.dropdown>li{
+    padding: 5px 0px;
+    /* border-bottom: 1px solid palegreen; */
+}
+
+
+
+.dropdown>li>a{
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
+
+.navigation>ul>li:hover>.dropdown{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+.dropdown>li:hover{
+    background-color: rgb(78, 158, 158);
+    color:rgb(212, 150, 16) ;
+}
+
+/* dropdown finished */
+
+/* main area started */
+
+.main-area{
+    text-align: left;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/bg\ \(1\).jpg);}
+    
+    
+
+.info{
+    margin-top: 7%;
+    margin-left: 6%;
+}
+ 
+.info h1{
+    font-size: 45px;
+    color: rgb(114, 81, 41);
+}
+
+.info h3{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+.info span{
+    color: rgb(212, 150, 16);
+    font-size: 20px;
+}
+
+.info a{
+    text-decoration: none;
+    color: rgb(32, 211, 211);
+    background-color: rgb(31, 59, 83);
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+.info a:hover{
+    color:rgb(212, 150, 16);
+    background-color: rgb(72, 133, 133);
+}
+
+.image{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+.image img{
+    position: absolute;
+    height: 133%;
+    left: 40%;
+    transform: translate(-65%);
+    bottom: 0;
+    transition: 3s ease;
+}
+
+.image img:hover{
+    left: 55%;
+}
+.icons a{
+    text-decoration: none;
+    color: #000;
+}
+
+.icons ion-icon{
+    margin: 7%;
+    color: #000;
+    margin-right: -60px;
+    font-size: 40px;
+    transition: 0.5s ease;
+}
+
+.icons ion-icon:hover{
+    color: rgb(49, 110, 243);
+}
+
+.icons ion-icon:youtube::hober{
+    color: rgb(226, 27, 27);
+}
